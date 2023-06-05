@@ -1,22 +1,42 @@
-h1{
+body{
     text-align: center;
     color: brown;
+    font-style: none;
 }
 
-p{
-    text-align: center;
+h5{
     color: brown;
+    float: right;
 }
 
 li{
-    margin: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    list-style: none;
+    display: inline;
 }
 
-img{
-    width: 10%;
+a{
+    text-decoration: none;
+    color: brown;
+}
+
+a:hover{
+    font-size: 30px;
+    color: blue;
+}
+
+header{
+    width: 30%;
     height: auto;
 }
 
-*{
-    background-color: black;
+img{
+    height: 200px;
+    width: auto;
 }
+
+*{
+    background-color: #191919;
+}
+
