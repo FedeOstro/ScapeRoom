@@ -1,0 +1,22 @@
+h1{
+    text-align: center;
+    color: brown;
+}
+
+p{
+    text-align: center;
+    color: brown;
+}
+
+li{
+    margin: 2%;
+}
+
+img{
+    width: 10%;
+    height: auto;
+}
+
+*{
+    background-color: black;
+}

@@ -1,4 +1,4 @@
-class escape{
+/*class escape{
     static private string[] incognitasalas{
 
     }
@@ -17,4 +17,4 @@ class escape{
     public static bool resolverSala(int Sala, string incognita){
         
     }
-}
+}*/
