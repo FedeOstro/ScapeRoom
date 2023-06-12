@@ -1,20 +1,24 @@
-/*class escape{
-    static private string[] incognitasalas{
-
-    }
-    static private int estadojuego{
-
-    }
-
+   class escape{
+    private static string[] incognitasSalas{get; set;}
+     private static int estadoJuego{get; set;}
     private static void InicializarJuego(){
-
+        incognitasSalas = new string[] {"true", "ezequiel","true","true"};
+        estadoJuego = 1;
     }
-
-    public static int getEstadoJuego(){
-
+    public static int GetEstadoJuego(){
+        return estadoJuego;
     }
-
-    public static bool resolverSala(int Sala, string incognita){
-        
+    public static bool ResolverSala(int Sala, string Incognita){
+        InicializarJuego();
+        if(Sala == estadoJuego){
+            if(Incognita == incognitasSalas[estadoJuego]){
+                return true;
+                 estadoJuego++;
+            }else{
+                return false;
+            }
+        }else{
+            return false;
+        }
     }
-}*/
+   }

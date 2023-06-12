@@ -11,11 +11,105 @@ html {
 }
 
 body {
-  margin: 20px 60px 0px 20px;
+  margin: 0px;
 }
 
 footer {
   position: fixed; 
   bottom: 0; 
   margin: 10px 0px 20px 0px;
+}
+
+div{
+  height: 969px;
+  width: 1873px;
+}
+
+.indexD {
+  text-align: center;
+  color: brown;
+  font-style: none;
+  width: 700px;
+  height: auto;
+  padding-top: 300px;
+  padding-left: 600px;
+}
+
+.indexH h5{
+  color: brown;
+  float: left;
+}
+
+.indexD li{
+  margin-top: 10px;
+  margin-right: 10px;
+  list-style: none;
+  display: inline;
+}
+
+.indexD a{
+  text-decoration: none;
+  color: brown;
+}
+
+.indexD a:hover{
+  font-size: 30px;
+  color: blue;
+}
+
+.indexH header{
+  width: 30%;
+  height: auto;
+}
+
+.indexH img{
+  height: 200px;
+  width: auto;
+  float: left;
+}
+
+.index {
+  background-color: #191919;
+  
+}
+
+#caja{
+  background-color: red;
+  margin: 2rem;
+  padding: 2rem;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  
+}
+#clave{
+  float: right;
+}
+
+.com {
+  background-image: url(../img/fondo1.jpg);
+}
+.com img{
+  height: 100px;
+  width: auto;
+}
+.flecha1{
+  position: absolute;
+  top: 720px;
+  left: 650px;
+}
+.flecha2{
+  position: absolute;
+  top: 610px;
+  left: 780px;
+}
+.flecha3{
+  position: absolute;
+  top: 720px;
+  right: 480px;
+}
+.flecha4{
+  position: absolute;
+  top: 610px;
+  right: 605px;
 }

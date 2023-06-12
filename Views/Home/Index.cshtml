@@ -10,24 +10,26 @@
     }
     <link rel="stylesheet" href="~/css/site.css">
 </head>
-<header class="index">
+<div class="index">
+    <header class="indexH">
     <img src="~/img/logo.jpg" alt="Logo">
-    <h5 style="clear: both;">TP05- Sala de escape</h5>
-</header>
-<body class="index">
+    <h5>TP05- Sala de escape</h5>
+    </header>
+    <div class="indexD">
     <h1>La Casa Embrujada</h1>
     <p>Nunca podras escapar ..... con vida</p>
     <nav>
         <ul>
             <li><a href="tutorial.cshtml">Acceder al tutorial</a></li>
-             <li><a href="habitacion1.cshtml">Empezar el juego</a></li>
+            <li><a href='@Url.Action("comenzar")'>Empezar el juego</a></li>
             <li><a href="creditos.cshtml">Ir a los creditos</a></li>
         </ul>
     </nav>
-</body>
-<footer class="index">
+    </div>
+    <footer class="indexH">
     <h5>Federico Ostrovsky - Pablo Zurbano</h5>
-</footer>
+    </footer>
+</div>
 </html>
 
 
