@@ -166,11 +166,3 @@ div{
   width: 75px;
   height: auto;
 }
-
-.laberinto {
-  position: absolute;
-  top: 250px;
-  left: 700px;
-  height: 400px;
-  width: auto;
-}

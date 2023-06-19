@@ -1,20 +1,77 @@
+@model ScapeRoom.Models.Maze
+
+@{
+    ViewBag.Title = "Laberinto";
+}
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="~/css/site.css">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <style>
+        /* Estilos CSS para representar el laberinto */
+        #laberinto {
+            display: grid;
+            grid-template-columns: repeat(@Model.Width, 1fr);
+            grid-template-rows: repeat(@Model.Height, 1fr);
+            gap: 2px;
+            background-color: black;
+            padding: 10px;
+        }
+
+        .cell {
+            width: 20px;
+            height: 20px;
+            background-color: white;
+        }
+
+        .start {
+            background-color: green;
+        }
+
+        .end {
+            background-color: red;
+        }
+
+        .collision {
+            background-color: yellow;
+        }
+    </style>
 </head>
 <body>
-    <div class="H1">
-        id = "caja" onmouseleave= "evento()"eventos de mouse
-        <img class="laberinto" src="~/img/laberinto.png" alt="imagen">
-        <img class="gif" src="~/img/animacion.gif" width="68" height="68" border="0" id="imagen1">
-        <script>src = "site.js"</script>
-        <button onclick="alert('Ayuda 1: Mirá las paredes...')"> Pista 1 </button>.
-        <button onclick="alert('Ayuda 2: Mirá las paredes...')"> Pista 2 </button>.
+    <div id="laberinto">
+        @if (Model != null)
+        {
+            for (int row = 0; row < Model.Height; row++)
+            {
+                for (int col = 0; col < Model.Width; col++)
+                {
+                    int cellIndex = row * Model.Width + col;
+                    var cellClass = "";
+                    if (row == Model.StartRow && col == Model.StartCol)
+                    {
+                        cellClass = "start";
+                    }
+                    else if (row == Model.EndRow && col == Model.EndCol)
+                    {
+                        cellClass = "end";
+                    }
+                    else if (Model.CheckCollision(row, col))
+                    {
+                        cellClass = "collision";
+                    }
+
+                    <div class="cell @cellClass"></div>
+                }
+            }
+        }
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Resto del código JavaScript...
+    </script>
 </body>
 </html>
+
