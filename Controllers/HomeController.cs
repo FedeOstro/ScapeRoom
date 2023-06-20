@@ -29,6 +29,10 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult creditos(){
+        return View();
+    }
+
     public IActionResult Habitacion(int NumSala){
         return View("Habitacion"+NumSala);
     }
