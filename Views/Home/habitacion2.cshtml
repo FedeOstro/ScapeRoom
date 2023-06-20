@@ -40,7 +40,10 @@
     Y   Y Z A B C D E F G H I J K L M N O P Q R S T U V W X
     Z   Z A B C D E F G H I J K L M N O P Q R S T U V W X Y</pre>
 </section>
-    <form action='@Url.Action("Habitacion","Home")'><p>Ingrese el cifrado</p><input type="text"></form>
+    <form method="post" action='@Url.Action("ResolverHabitacion", new {sala=2})'>
+        <p>Ingrese el cifrado</p><input type="text" name="clave">
+        <input type="Submit" value="Enviar resupuesta">
+    </form>
     <button onclick="alert('Pista 1: Mirá arriva a la izquierda y El texto esta dado veulta')"> Pista 1 </button>.
     <button onclick="alert('Pista 2: tenes que poner en la fila las letras de el codigo y buscar hasta encontrar la letra de la palabra criptada')"> Pista 2 </button>.
     <a href="comenzar"><img class="patras" src="~/img/flechaAtras.png" alt="patras"></a>

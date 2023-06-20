@@ -6,5 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<body class="H5">
+    <H1>SALIDA</H1>
+    <img class="cd" src="~/img/candado.png" alt="candado">
+    <form method="post" action='@Url.Action("salafinal", new {sala=5})'>
+    <input class="rta1" type="number" name="num1"/>
+    <input class="rta2" type="number" name="num2"/>
+    <input class="rta3" type="number" name="num3"/>
+    <input class="rta4" type="number" name="num4"/> 
+    <input class="rta5" type="Submit" value="Intentar abrir el candado">
+    </form>
     <a href="comenzar"><img class="patras" src="~/img/flechaAtras.png" alt="patras"></a>
+</body>
 </html>

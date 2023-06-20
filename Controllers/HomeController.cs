@@ -55,5 +55,14 @@ public class HomeController : Controller
         }
         
     }
+    public IActionResult salafinal(int sala ,int num1, int num2, int num3, int num4){
+        string numerosCombinados = num1.ToString() + num2.ToString() + num3.ToString() + num4.ToString();
+        bool resolvio = escape.ResolverSala(sala, numerosCombinados);
+        if(resolvio == true){
+            return View("victoria");
+        }else{
+            return View("Habitacion"+sala);
+        }
+    }
 
 }

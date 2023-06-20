@@ -274,3 +274,76 @@ h1{
 .H3 form {
   text-align: center;
 }
+
+.H4 ol{
+  padding: 0;
+  display: flex;
+}
+.H4 ol li{
+  margin: 120px;
+  text-align: center;
+  color: white;
+}
+.H4 form{
+  text-align: center;
+  color: white;
+}
+.H4 button{
+  text-align: center;
+}
+.H4 .pistas{
+  position: absolute;
+  top: 480px;
+  right: 880px;
+}
+.H4{
+  background-color: black;
+}
+
+.H5{
+  background-color: black;
+}
+.H5{
+  color: white;
+}
+.H5 .cd{
+  position: absolute;
+  right: 750px;
+  height: 800px;
+  width: auto;
+}
+.H5 .rta1{
+  position: absolute;
+  bottom: 440px;
+  right: 915px;
+  height: 30px;
+  width: 100px;
+}
+.H5 .rta2{
+  position: absolute;
+  bottom: 375px;
+  right: 915px;
+  height: 30px;
+  width: 100px;
+}
+.H5 .rta3{
+  position: absolute;
+  bottom: 310px;
+  right: 915px;
+  height: 30px;
+  width: 100px;
+}
+.H5 .rta4{
+  position: absolute;
+  bottom: 245px;
+  right: 915px;
+  height: 30px;
+  width: 100px;
+}
+.H5 .rta5{
+  position: absolute;
+  bottom: 80px;
+  right: 880px;
+  height: 30px;
+  width: 180px;
+}

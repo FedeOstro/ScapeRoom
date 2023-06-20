@@ -6,9 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <button onclick="alert('Pista 1: Mirá las paredes...')"> Pista 1 </button>.
-    <button onclick="alert('Pista 1: Mirá las paredes...')"> Pista 2 </button>.
+<body class="H4">
+    <h1>Que soy...</h1>
+    <ol>
+        <li><h4>Soy tomado de un árbol, pero no soy fruta. Puedo volar sin tener alas y puedo llorar sin tener ojos. ¿Qué soy?</h4></li>
+        <li><h4>Si me nombras, me rompes. ¿Qué soy?</h4></li>
+        <li><h4>Soy Redondo redondo como barril sin fondo. ¿Qué soy?</h4></li>
+    </ol>
+    <form method="post" action='@Url.Action("ResolverHabitacion", new {sala=4})'>
+        <p>Ingrese las soluciones separadas por una coma</p><input type="text" name="clave">
+        <input type="Submit" value="Enviar resupuesta">
+    </form>
+    <section class="pistas">
+        <button onclick="alert('Pista 1: Es un material de uso diario y barato')"> Pista 1 </button>
+        <button onclick="alert('Pista 1: Es codiciado por alguien que busca dar una explicacion')"> Pista 2 </button>
+        <button onclick="alert('Pista 3: Significa compromiso y se usa en los dedos')"> Pista 3 </button>
+    </section> 
     <a href="comenzar"><img class="patras" src="~/img/flechaAtras.png" alt="patras"></a>
 </body>
 </html>
