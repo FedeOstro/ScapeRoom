@@ -1,78 +1,80 @@
-@model ScapeRoom.Models.Maze
-
 @{
-    ViewBag.Title = "Laberinto";
+    ViewData["Title"] = "Habitacion" + 1;
 }
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title</title>
-    <style>
-        /* Estilos CSS para representar el laberinto */
-        #laberinto {
-            display: grid;
-            grid-template-columns: repeat(@Model.Width, 1fr);
-            grid-template-rows: repeat(@Model.Height, 1fr);
-            gap: 2px;
-            background-color: black;
-            padding: 10px;
-        }
+<h1>Habitación1 </h1>
 
-        .cell {
-            width: 20px;
-            height: 20px;
-            background-color: white;
-        }
-
-        .start {
-            background-color: green;
-        }
-
-        .end {
-            background-color: red;
-        }
-
-        .collision {
-            background-color: yellow;
-        }
-    </style>
-</head>
-<body>
-    <div id="laberinto">
-        @if (Model != null)
-        {
-            for (int row = 0; row < Model.Height; row++)
-            {
-                for (int col = 0; col < Model.Width; col++)
-                {
-                    int cellIndex = row * Model.Width + col;
-                    var cellClass = "";
-                    if (row == Model.StartRow && col == Model.StartCol)
-                    {
-                        cellClass = "start";
-                    }
-                    else if (row == Model.EndRow && col == Model.EndCol)
-                    {
-                        cellClass = "end";
-                    }
-                    else if (Model.CheckCollision(row, col))
-                    {
-                        cellClass = "collision";
-                    }
-
-                    <div class="cell @cellClass"></div>
-                }
-            }
-        }
+<div id="laberinto">
+    <div class="fila">
+        <div class="celda inicio"></div>
+        <div class="celda"></div>
+        <div class="pared"></div>
+        <div class="celda"></div>
     </div>
+    <div class="fila">
+        <div class="pared"></div>
+        <div class="pared"></div>
+        <div class="pared"></div>
+        <div class="celda"></div>
+    </div>
+    <div class="fila">
+        <div class="celda"></div>
+        <div class="pared"></div>
+        <div class="celda"></div>
+        <div class="celda"></div>
+    </div>
+    <div class="fila">
+        <div class="celda"></div>
+        <div class="pared"></div>
+        <div class="celda"></div>
+        <div class="celda"></div>
+    </div>
+</div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        // Resto del código JavaScript...
-    </script>
-    <a href="comenzar"><img class="patras" src="~/img/flechaAtras.png" alt="patras"></a>
-</body>
-</html>
+<style>
+    #laberinto {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        width: 400px;
+        height: 400px;
+    }
+    
+    .fila {
+        display: flex;
+    }
+    
+    .celda {
+        background-color: white;
+        border: 1px solid black;
+    }
+    
+    .pared {
+        background-color: black;
+        border: 1px solid black;
+    }
+    
+    .inicio {
+        background-color: green;
+    }
+</style>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var inicio = document.querySelector('.inicio');
+        var celdas = document.querySelectorAll('.celda');
+        
+        inicio.addEventListener('mousemove', function(event) {
+            var x = event.clientX - inicio.offsetLeft;
+            var y = event.clientY - inicio.offsetTop;
+            
+            celdas.forEach(function(celda) {
+                if (x < celda.offsetLeft || x > celda.offsetLeft + celda.offsetWidth ||
+                    y < celda.offsetTop || y > celda.offsetTop + celda.offsetHeight) {
+                    inicio.style.left = '0';
+                    inicio.style.top = '0';
+                }
+            });
+        });
+    });
+</script>
