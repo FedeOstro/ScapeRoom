@@ -347,3 +347,28 @@ h1{
   height: 30px;
   width: 180px;
 }
+
+.victoria{
+  background-color: black;
+}
+.victoria a{
+  text-decoration: none;
+}
+.victoria p{
+  text-decoration: none;
+  color: brown;
+  text-align: center;
+}
+.victoria h1{
+  text-align: center;
+}
+.victoria h3{
+  text-align: center;
+  color: brown;
+}
+.victoria img{
+  height: 700px;
+  width: auto;
+  position: absolute;
+  right: 340px;
+}
