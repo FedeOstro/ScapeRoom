@@ -6,8 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <button onclick="alert('Pista 1: Mirá las paredes...')"> Pista 1 </button>.
-    <button onclick="alert('Pista 1: Mirá las paredes...')"> Pista 2 </button>.
-</body>
+<div class="H3">
+    <h1>Los cuadros...</h1>
+    <img class="C1" src="~/img/cuadro1.jpg" alt="1">
+    <img class="C2" src="~/img/cuadro2.jfif" alt="2">
+    <img class="C3" src="~/img/cuadro3.jpg" alt="3">
+    <img class="C4" src="~/img/cuadro4.webp" alt="4">
+    <img class="azul" src="~/img/azul.webp" alt="azul">
+    <img class="blanco" src="~/img/blanco.png" alt="blanco">
+    <img class="rojo" src="~/img/rojo.png" alt="rojo">
+    <img class="verde" src="~/img/verde.jpg" alt="verde">
+    <button onclick="alert('Pista 1: Busca los colores')"> Pista 1 </button>.
+    <button onclick="alert('Pista 2: La cuenta de los colores es la solucion')"> Pista 2 </button>.
+    <form method="post" action='@Url.Action("ResolverHabitacion", new {numsala=3})'>
+        <input type="number" name="clave"/>  
+        <input type="Submit" value="Enviar resupuesta">
+    </form>
+</div>
 </html>

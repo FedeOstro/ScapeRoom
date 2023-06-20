@@ -47,19 +47,6 @@ public class HomeController : Controller
 
         [HttpPost]
     public IActionResult ResolverHabitacion(int sala, string clave){
-        if(sala == escape.GetEstadoJuego()){
-            if(escape.ResolverSala(sala,clave) == true){
-                return View("habitacion+escape.GetEstadoJuego()");
-                if(sala == 4){
-                    return View("Victoria");
-                }
-            }else{
-                return View("habitacion+escape.GetEstadoJuego()");
-                ViewBag.Error = "La clave ingresada es incorrecta";
-            }
-        }else{
-            return View("habitacion+escape.GetEstadoJuego()");
-        }
         
     }
 
