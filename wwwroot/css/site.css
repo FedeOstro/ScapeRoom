@@ -25,6 +25,25 @@ div{
   width: 1873px;
 }
 
+.patras{
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.rta{
+  height: 700px;
+  width: auto;
+}
+.rtas{
+  background-color: rgba(78, 75, 75, 0.555);
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .indexD {
   text-align: center;
   color: brown;
@@ -73,7 +92,7 @@ div{
   
 }
 
-#caja{
+.caja{
   background-color: red;
   margin: 2rem;
   padding: 2rem;
@@ -82,9 +101,7 @@ div{
   text-align: center;
   
 }
-#clave{
-  float: right;
-}
+
 
 .com {
   background-image: url(../img/fondo1.jpg);
@@ -170,10 +187,31 @@ div{
   height: auto;
 }
 
-.H3 h1{
+h1{
   color: brown;
   text-align: center;
 }
+
+.H2{
+  background-color: black;
+}
+.H2 p{
+  color: white;
+}
+.H2 pre{
+  color: white;
+}
+.H2 .ayuda{
+  position: absolute;
+  right: 20px;
+  top: 350px;
+}
+.clave{
+  position: absolute;
+  right: 20px;
+  top: 400px;  
+}
+
 .H3{
   background-color: black;
 }

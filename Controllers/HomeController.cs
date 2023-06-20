@@ -47,6 +47,12 @@ public class HomeController : Controller
 
         [HttpPost]
     public IActionResult ResolverHabitacion(int sala, string clave){
+        bool resolvio = escape.ResolverSala(sala, clave);
+        if(resolvio == true){
+            return View("rta"+sala);
+        }else{
+            return View("Habitacion"+sala);
+        }
         
     }
 
