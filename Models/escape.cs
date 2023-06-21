@@ -1,7 +1,7 @@
    class escape{
     private static string[] incognitasSalas{get; set;}
     private static void InicializarJuego(){
-        incognitasSalas = new string[] {"true", "ezequiel","1235","papel,silencio,anillo", "2832"};
+        incognitasSalas = new string[] {"Interestellar", "ezequiel","1235","papel,silencio,anillo", "2832"};
     }
 
     public static bool ResolverSala(int Sala, string Incognita){

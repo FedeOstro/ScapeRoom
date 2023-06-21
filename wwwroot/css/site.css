@@ -400,3 +400,24 @@ h1{
 .tuto div{
   height: 50px;
 }
+
+H1{
+  background-color: black;
+}
+
+.imagen-container {
+  display: inline-block;
+  width: 33.33%; 
+  box-sizing: border-box;
+  padding: 5px;
+  text-align: center;
+}
+
+.imagenes5 {
+  text-align: center;
+}
+
+.imagenes5 .imagen-container img{
+  width: 50%;
+  height: auto;
+}
