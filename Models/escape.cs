@@ -13,5 +13,13 @@
             return resolvio == false;
         }   
     }
-    
+    public static bool ResolverSala1(int Sala, string Incognita){
+        InicializarJuego();
+        bool resolvio = true;
+        if(Incognita == incognitasSalas[0]){
+            return resolvio == true;
+        }else{
+            return resolvio == false;
+        }
+    }
    }

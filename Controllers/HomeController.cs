@@ -28,7 +28,12 @@ public class HomeController : Controller
         return View("Habitacion"+NumSala);
     }
     public IActionResult ResolverHabitacion(int sala, string clave){
-        bool resolvio = escape.ResolverSala(sala, clave);
+        bool resolvio = false;
+        if(sala == 1){
+            resolvio = escape.ResolverSala1(sala, clave);
+        }else{
+            resolvio = escape.ResolverSala(sala, clave);
+        }
         if(resolvio == true){
             return View("rta"+sala);
         }else{

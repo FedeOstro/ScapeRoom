@@ -309,28 +309,28 @@ h1{
 }
 .H5 .rta1{
   position: absolute;
-  bottom: 440px;
+  bottom: 410px;
   right: 915px;
   height: 30px;
   width: 100px;
 }
 .H5 .rta2{
   position: absolute;
-  bottom: 375px;
+  bottom: 345px;
   right: 915px;
   height: 30px;
   width: 100px;
 }
 .H5 .rta3{
   position: absolute;
-  bottom: 310px;
+  bottom: 280px;
   right: 915px;
   height: 30px;
   width: 100px;
 }
 .H5 .rta4{
   position: absolute;
-  bottom: 245px;
+  bottom: 215px;
   right: 915px;
   height: 30px;
   width: 100px;
@@ -401,10 +401,6 @@ h1{
   height: 50px;
 }
 
-H1{
-  background-color: black;
-}
-
 .imagen-container {
   display: inline-block;
   width: 33.33%; 
@@ -420,4 +416,15 @@ H1{
 .imagenes5 .imagen-container img{
   width: 50%;
   height: auto;
+}
+.hab1{
+  background-color: black;
+}
+
+.H2 .img1{
+  height: 500px;
+  width: auto;
+  position: absolute;
+  bottom: 30px;
+  right: 700px;
 }

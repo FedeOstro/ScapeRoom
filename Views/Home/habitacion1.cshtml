@@ -7,7 +7,8 @@
     <title>Document</title>
 </head>
 <div class="imagenes5">
-<body>
+<body class="hab1">
+    <h1>La cancion...</h1>
     <div class="imagenes5">
         <div class="imagen-container">
             <img src="~/img/oz.jpg" alt="imagen">
@@ -31,12 +32,12 @@
     <audio controls>
         <source src="~/audio/inter.mp3" type="audio/mp3">
     </audio>
-    <form action='@Url.Action("ResolverHabitacion", new {sala=1})' target="_blank">
+    <form method="post" action='@Url.Action("ResolverHabitacion", new {sala=1})'>
     <p>
         De que pelicula es esta musica
-        <select name="clave" >
+        <select name="clave">
             <option> mago de oz </option>
-            <option selected> Interestelar </option>
+            <option> Interestellar </option>
             <option> guerra mundial z</option>
             <option>get out</option>
             <option>mulholland</option>
