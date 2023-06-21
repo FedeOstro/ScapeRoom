@@ -1,4 +1,3 @@
-<script>
 package net.jc_mouse.app;
 import java.awt.AWTException;
 import java.awt.Color;
@@ -29,10 +28,10 @@ import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
-
-  @web http://wwww.jc-mouse.net/
-  @author mouse
- 
+/**
+ * @web http://wwww.jc-mouse.net/
+ * @author mouse
+ */
 public class MazePanel extends JPanel{
         
     private int level=0;//para controlar el nivel en donde se encuentra el jugador
@@ -231,5 +230,5 @@ public class MazePanel extends JPanel{
         }
         
     }
-}
-    </script>
+    
+    /**
